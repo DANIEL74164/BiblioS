@@ -86,8 +86,6 @@
         <tr>
             <td colspan="2">
                 <button type="submit" class="btn btn-default">Registrarse</button>
-
-                <span class="float-right"><a href="<?= base_url() . 'login'; ?>" class="btn btn-primary">Login</a></span>
                 </form>
 
             </td>

@@ -43,7 +43,7 @@
         		height: 100%;
         	}
         	td {
-        		padding: 17px;
+        		padding: 14px;
         	}
         	button {
         		width: 100%;

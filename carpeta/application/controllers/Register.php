@@ -21,7 +21,7 @@ class Register extends CI_Controller {
         
         /*$this->form_validation->set_rules('codigo', 'Codigo', 'required');
         $this->form_validation->set_message('is_unique', 'Email already exists.');
-        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]');
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[usuario.usua_email]');
         $this->form_validation->set_rules('password', 'Password');*/
         //agregando mas datos 
         /*$this->form_validation->set_rules('codigo','Codigo', 'required');
