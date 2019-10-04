@@ -19,10 +19,10 @@ class Register extends CI_Controller {
     
     public function doRegister() {
         
-        $this->form_validation->set_rules('codigo', 'Codigo', 'required');
+        /*$this->form_validation->set_rules('codigo', 'Codigo', 'required');
         $this->form_validation->set_message('is_unique', 'Email already exists.');
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]');
-        $this->form_validation->set_rules('password', 'Password');
+        $this->form_validation->set_rules('password', 'Password');*/
         //agregando mas datos 
         /*$this->form_validation->set_rules('codigo','Codigo', 'required');
         $this->form_validation->set_rules('nombres','Nombres', 'required');
@@ -33,10 +33,10 @@ class Register extends CI_Controller {
         $this->form_validation->set_rules('confirmar','confirmar', 'required');
         $this->form_validation->set_rules('email','Email', 'required');
         $this->form_validation->set_rules('telefono','Telefono', 'required');*/
-        if ($this->form_validation->run() == FALSE) {
+        /*if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata('errors', validation_errors());
             redirect(base_url() . 'register');
-        } else {
+        } else {*/
             $codigo = $this->input->post('codigo');
             $nombres = $this->input->post('nombres');
             $apellidos = $this->input->post('apellidos');
@@ -54,6 +54,6 @@ class Register extends CI_Controller {
                 $this->session->set_flashdata('msg', 'Successfully Register, Login now!');
                 redirect(base_url() . 'login');
             }
-        }
+        //}
     }
 }
