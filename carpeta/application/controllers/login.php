@@ -28,7 +28,7 @@ class Login extends CI_Controller {
             redirect(base_url().'welcome');
         } else {
             $this->session->set_userdata('logged_in', false);
-            $this->session->set_flashdata('msg', 'Username / Password Invalid');
+            $this->session->set_flashdata('msg', 'Usuario / Contraseña incorrecto');
             redirect(base_url().'login');            
         }
     }

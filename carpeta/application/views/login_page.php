@@ -1,4 +1,4 @@
-<br />
+<body>
 <form action="<?= base_url(); ?>login/doLogin" method="post">
     <h1>BiblioSis</h1>
 
@@ -6,7 +6,7 @@
         
         <h5 class="log">Acceso al sistema</h5>
 
-    <table>
+    <table class="login">
         <tr>
             <td>
 
@@ -40,7 +40,5 @@
 
     </div>
 
-
-
-    
 </form>
+</body>

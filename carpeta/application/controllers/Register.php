@@ -51,7 +51,7 @@ class Register extends CI_Controller {
             
             $insert_data = $this->register->add_user($data);
             if ($insert_data) {
-                $this->session->set_flashdata('msg', 'Successfully Register, Login now!');
+                $this->session->set_flashdata('msg', 'Registrado correctamente');
                 redirect(base_url() . 'login');
             }
         //}

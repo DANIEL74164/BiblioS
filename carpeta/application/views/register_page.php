@@ -1,9 +1,10 @@
-<br />
+
+<body topmargin="0"leftmargin="0" marginwidth="0" marginheight="0"></body>
     <h2>BiblioSis</h2>
     <h5>Registrarse</h5>
+        <tr>
 
     <table class="registro">
-        <tr>
             <td>
                 <form action="<?= base_url(); ?>register/doRegister" method="post">
 
@@ -28,18 +29,10 @@
                     <label for="nombres">Nombres:</label>
                     <input type="text" name="nombres" required class="form-control" id="nombres">
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
                 <div class="form-group">
                     <label for="apellidos">Apellidos:</label>
                     <input type="text" name="apellidos" required class="form-control" id="apellidos">
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
                 <div class="form-group">
                     <label for="direccion">Direccion:</label>
                     <input type="text" name="direccion" required class="form-control" id="direccion">
