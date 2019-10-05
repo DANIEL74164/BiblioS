@@ -21,16 +21,25 @@ class Login extends CI_Controller {
     public function doLogin() {
         $usuario = $this->input->post('usuario');
         $contraseña = $this->input->post('password');
+        $admin = $this->input->post('checkbox');
         $check_login = $this->login->checkLogin($usuario, $contraseña);
-
-        if ($check_login) {
+        $esadmin_login = $this->login->esadminLogin($admin);
+        if (($check_login)&&($esadmin_login>0)) {
             $this->session->set_userdata('logged_in', true);
-            redirect(base_url().'welcome/index');
-        } else {
-            $this->session->set_userdata('logged_in', false);
-            $this->session->set_flashdata('msg', 'Usuario / Contraseña incorrecto');
-            redirect(base_url().'login');            
+            redirect(base_url().'welcome/dashboard');
+            
+        } elseif($check_login) {
+             $this->session->set_userdata('logged_in', true);
+            redirect(base_url().'welcome/index');      
         }
+        else{
+            $this->session->set_userdata('logged_in', false);
+            $this->session->set_flashdata('msg', 'Usuario / Contraseña incorrecta');
+            redirect(base_url().'login');      
+        }
+        
+
+       
     }
     public function logout() {
         $this->session->unset_userdata('logged_in');

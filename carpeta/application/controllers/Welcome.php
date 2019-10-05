@@ -12,6 +12,13 @@ class Welcome extends MY_Controller {
         $this->load->view('inicio');
         $this->load->view('footer');
     }
+
+    public function dashboard() {
+        $this->load->view('header');
+        $this->load->view('admin_page');
+        $this->load->view('inicio');
+        $this->load->view('footer');
+    }
     public function portada() {
     	$result = $this->db->get('ejemplar');
     	$dato = array('consulta' => $result);
