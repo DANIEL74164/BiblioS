@@ -49,7 +49,10 @@
                 width: 45%;
                 height: 100%;
                 margin: auto;
-                margin-bottom: 1em;              
+                margin-bottom: 1em;             
+            }
+            .registro td {
+                padding:10px;
             }
         	.login td {
         		padding: 10px;
@@ -59,10 +62,19 @@
         	}
             /*Estilo de usuario_page*/
             .usuariobody {
-                margin-top: 10px;
-                margin-bottom: 10px;
-                margin-left: 10px;
-                margin-right: 10px;
+                margin-top: 14px;
+                margin-bottom: 14px;
+                margin-left: 14px;
+                margin-right: 14px;
+            }
+            .usuariopage .inicio {
+                background-color: orange;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+            .usuariopage .portada {
+                
             }
             .usuariopage {
                 border: 1px solid;
