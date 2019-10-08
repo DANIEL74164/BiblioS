@@ -116,5 +116,8 @@
                 border: 1px solid;
                 width: 100%;
             }
+            .usuariopage .ejemplaradmin .uno {
+                border: 1px solid;
+            }
         </style>
     </head>

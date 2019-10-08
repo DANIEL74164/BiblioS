@@ -22,12 +22,12 @@
 						$i=1;
 						foreach ($consulta->result() as $fila) {
 					?>
-					<tr>
-						<td><?php echo $fila->ejem_titulo ?></td>
-						<td><?php  ?></td>
-						<td><?php  ?></td>
-						<td><?php echo $fila->ejem_cate_id?></td>
-						<td><?php  ?></td>
+					<tr class="uno">
+						<td class="uno"><?php echo $fila->ejem_titulo ?></td>
+						<td class="uno"><?php  ?></td>
+						<td class="uno"><?php  ?></td>
+						<td class="uno"><?php echo $fila->ejem_cate_id?></td>
+						<td class="uno"><?php  ?></td>
 					</tr>
 					<?php
 						}
