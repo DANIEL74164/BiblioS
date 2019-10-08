@@ -12,8 +12,8 @@
 
 				<table cellpadding="4" class="ejemplaradmin">
 					<tr>
-						<th>Titulo</th>
-						<th>Autor</th>
+						<th> Titulo </th>
+						<th> Autor </th>
 						<th>Area</th>
 						<th>Categoria</th>
 						<th>Opciones</th>
