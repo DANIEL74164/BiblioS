@@ -23,7 +23,6 @@
         <label for="password">Contraseña:</label>
         <input type="password" name="password" required class="form-control" id="password">
     </div>
-
     <div class="checkbox">
         <input type="checkbox" name="checkbox" id="checkbox" value="1">
         <label for="checkbox">Ingresar como administrador?</label>

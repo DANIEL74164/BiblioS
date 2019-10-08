@@ -24,7 +24,7 @@ class Login extends CI_Controller {
         $admin = $this->input->post('checkbox');
         $check_login = $this->login->checkLogin($usuario, $contraseña);
         $esadmin_login = $this->login->esadminLogin($admin);
-        if (($check_login)&&($esadmin_login>0)) {
+        if ($check_login&&$admin) {
             $this->session->set_userdata('logged_in', true);
             redirect(base_url().'welcome/dashboard');
             
@@ -38,8 +38,6 @@ class Login extends CI_Controller {
             redirect(base_url().'login');      
         }
         
-
-       
     }
     public function logout() {
         $this->session->unset_userdata('logged_in');
