@@ -4,9 +4,14 @@
         parent::__construct(); 
         $this->load->helper('url');
         $this->load->database();
-        $this->load->model('RegisterModel', 'register');
+        $this->load->model('AgregarejemplarModel', 'crear');
     }
-
+    public function index() {
+        $this->load->view('header');
+        $this->load->view('admin_page');
+        $this->load->view('crearejemplaradmin');
+        $this->load->view('footer');
+    }
      public function Crear() {
         
         /*$this->form_validation->set_rules('codigo', 'Codigo', 'required');
@@ -27,23 +32,16 @@
             $this->session->set_flashdata('errors', validation_errors());
             redirect(base_url() . 'register');
         } else {*/
-            $codigo = $this->input->post('codigo');
-            $nombres = $this->input->post('nombres');
-            $apellidos = $this->input->post('apellidos');
-            $direccion = $this->input->post('direccion');
-            $usuario = $this->input->post('usuario');
-            $contraseña = $this->input->post('password');
-            $email = $this->input->post('email');
-            $telefono = $this->input->post('telefono');
+            $titulo = $this->input->post('titulo');
             
             $data = [
-                'usua_login' => $usuario, 'usua_password' => $contraseña, 'usua_codigo' => $codigo, 'usua_nombres' => $nombres, 'usua_apellidos' => $apellidos, 'usua_direccion' => $direccion, 'usua_email' => $email, 'usua_telefono' => $telefono];
+                'ejem_titulo' => $titulo];
             
-            $insert_data = $this->register->add_user($data);
+            $insert_data = $this->crear->add_ejemplar($data);
             if ($insert_data) {
-                $this->session->set_flashdata('msg', 'Registrado correctamente');
-                redirect(base_url() . 'login');
+                //$this->session->set_flashdata('msg', 'Registrado correctamente');
+                redirect(base_url() . 'welcomeadmin/ejemplaradmin');
             }
-        //}
     }
+}
  ?>

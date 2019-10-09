@@ -1,7 +1,7 @@
 	<td valign="top" class="portada">
 			<div>
 			<p>Ejemplares</p>
-			<span class="float-right"><a href="<?= base_url() . 'register'; ?>" class="btn btn-primary">Crear ejemplar</a></span>
+			<span class="float-right"><a href="<?= base_url() . 'crearejemplar/index'; ?>" class="btn btn-primary">Crear ejemplar</a></span>
 			</div>
 			<hr>
 
@@ -27,10 +27,7 @@
 						<td class="uno"><?php  ?></td>
 						<td class="uno"><?php  ?></td>
 						<td class="uno"><?php echo $fila->ejem_cate_id?></td>
-						<td class="uno"><?php echo '
-								<a href="edit.php?nik='.$row['task_id'].'" title="Editar datos" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
-								<a href="principal.php?aksi=delete&nik='.$row['task_id'].'" title="Eliminar" onclick="return confirm(\'Esta seguro de borrar los datos de '.$row['title'].'?\')" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-						 '?></td>
+						<td class="uno"><?php ?></td>
 					</tr>
 					<?php
 						}
