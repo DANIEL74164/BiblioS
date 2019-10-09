@@ -119,5 +119,31 @@
             .usuariopage .ejemplaradmin .uno {
                 border: 1px solid;
             }
+
+            /*estilos de reportes*/
+
+            .reportes {
+                width: 40%;
+            }
+            .reportes td {
+                border: 1px solid;
+                text-align: center;
+            }
+
+            .reportes a {
+                display: inline-block;
+                color:black;
+                
+                width: 100%;
+                padding: 7px;
+                text-decoration: none;
+                -webkit-transition:all 500ms ease;
+                -o-transition:all 500ms ease;
+                transition:all 500ms ease;
+            }
+            .reportes a:hover {
+                background: gray;
+                color: white;
+            }
         </style>
     </head>

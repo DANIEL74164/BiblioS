@@ -26,7 +26,7 @@ class Login extends CI_Controller {
         $esadmin_login = $this->login->esadminLogin($admin);
         if ($check_login&&$admin) {
             $this->session->set_userdata('logged_in', true);
-            redirect(base_url().'welcome/dashboard');
+            redirect(base_url().'welcomeadmin/index');
             
         } elseif($check_login) {
              $this->session->set_userdata('logged_in', true);

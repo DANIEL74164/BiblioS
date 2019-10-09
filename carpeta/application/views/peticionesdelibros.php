@@ -1,21 +1,12 @@
 	<td valign="top" class="portada">
-			<div>
-			<p>Ejemplares</p>
-			<span class="float-right"><a href="<?= base_url() . 'register'; ?>" class="btn btn-primary">Crear ejemplar</a></span>
-			</div>
-			<hr>
-
-    		<form>
-        		Buscar: <input id="searchTerm" type="text" onkeyup="doSearch()" />
-    		</form>
+		<h3>Peticiones de libros</h3>
     		<hr>
 
 				<table cellpadding="4" class="ejemplaradmin">
 					<tr style="background-color: orange;">
-						<th>Titulo</th>
-						<th>Autor</th>
-						<th>Area</th>
-						<th>Categoria</th>
+						<th>Libro</th>
+						<th>Fecha</th>
+						<th>Observacion</th>
 						<th>Opciones</th>
 					</tr>
 					<?php 
@@ -23,11 +14,11 @@
 						foreach ($consulta->result() as $fila) {
 					?>
 					<tr class="uno">
-						<td class="uno"><?php echo $fila->ejem_titulo ?></td>
+						<td class="uno"><?php echo $fila->peti_ejem_id ?></td>
+						<td class="uno"><?php echo $fila->peti_fechareg ?></td>
 						<td class="uno"><?php  ?></td>
 						<td class="uno"><?php  ?></td>
-						<td class="uno"><?php echo $fila->ejem_cate_id?></td>
-						<td class="uno"><?php  ?></td>
+						
 					</tr>
 					<?php
 						}
