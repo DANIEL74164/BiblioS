@@ -25,6 +25,6 @@
 					<td><a href="<?= base_url() . 'welcome/portada'; ?>">Historial de busquedas</a></td>
 				</tr>
 				<tr>
-					<td><a href="<?= base_url() . 'welcome/userpage'; ?>">Datos de usuario</a></td>
+					<td><a href="<?= base_url() . 'welcome/portada'; ?>">Datos de usuario</a></td>
 				</tr>
 			</table>

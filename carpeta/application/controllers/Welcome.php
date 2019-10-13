@@ -23,15 +23,8 @@ class Welcome extends MY_Controller {
         $this->load->view('portada',$dato);
         $this->load->view('footer'); 
     }
-    public function userpage() {
-        $result = $this->db->get('usuario');
-        $data = array('consulta' => $result);
-        $this->load->view('header');
-        $this->load->view('usuario_page');
-        $this->load->view('info_user',$data);
-        $this->load->view('footer'); 
-    }
 
+    /*
     public function dashboard() {
         $this->load->view('header');
         $this->load->view('admin_page');
@@ -49,7 +42,7 @@ class Welcome extends MY_Controller {
         $this->load->view('ejemplaradmin',$dato);
         $this->load->view('footer'); 
     }
-
+    */
     public function buscarlibro() {
         $this->load->view('header');
         $this->load->view('usuario_page');
