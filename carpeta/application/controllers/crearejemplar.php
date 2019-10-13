@@ -33,15 +33,24 @@
             redirect(base_url() . 'register');
         } else {*/
             $titulo = $this->input->post('titulo');
+            $area = $this->input->post('area');
+            $cate = $this->input->post('cate');
+            $editorial = $this->input->post('editorial');
             
             $data = [
-                'ejem_titulo' => $titulo];
+                'ejem_titulo' => $titulo,
+                'ejem_area_id' => $area,
+                'ejem_cate_id' => $cate,
+                'ejem_editorial' => $editorial];
+            
+
             
             $insert_data = $this->crear->add_ejemplar($data);
             if ($insert_data) {
                 //$this->session->set_flashdata('msg', 'Registrado correctamente');
                 redirect(base_url() . 'welcomeadmin/ejemplaradmin');
             }
+
     }
 }
  ?>
