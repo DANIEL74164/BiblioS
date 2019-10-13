@@ -1,46 +1,31 @@
 ###################
-What is CodeIgniter
+Acerca del Sistema de Biblioteca (BiblioSis)
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Este sistema de biblioteca, se desarrolló utilizando PHP, HTML, MYSQLi y jQuery. 
+Utilizamos bootstrap como marco frontal para tener un diseño agradable. 
+El sistema puede tomar prestados y devolver libros en una transacción, 
+y también puede rastrear los detalles de las transacciones de los estudiantes.
+
+
+*******
+Como instalar el sistema de bilioteca
+*******
+
+Primero descargamos los archivos del git, y lo extraemos dentro del "xampp/htdocs" una vez ahi buscamos los archivos (.mwb) y (.sql) dentro de la carpeta DATABASE.
+Abrimos primero el archivo (.mwb) en el workbrench. Despues en el phpMyAdmin se crea una base de datos con el
+nombre "biblioteca", para luego sincronizar el modelo. 
+Una vez sincronizado importamos el archivo bibliosis.sql al phpMyAdmin. Con eso ya tendriamos nuestra base de datos instalada.
+
+
 
 *******************
-Release Information
+El grupo
 *******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+Esta conformado por:
+  - DANIEL74164 - Daniel Condori Cama
+  - ANDREGH154 - Andre Flores Oquendo
+  - diego569 - Diego Romani Cotohuanca
 
 *******
 License
@@ -58,13 +43,3 @@ Resources
 -  `Community Forums <http://forum.codeigniter.com/>`_
 -  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
 -  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
