@@ -77,6 +77,8 @@ class Welcomeadmin extends MY_Controller {
   {
     if($this->session->userdata('usua_esadmin')==1){
     $this->load->view('header');
+    $this->load->view('footer'); 
+    $this->load->view('admin_page');
     $obtener_usuario_id =  $this->session->userdata('usua_id');
     $data['usuarioInfo'] = $this->DatosModel->obtener_usuario_por_id($obtener_usuario_id);
     
