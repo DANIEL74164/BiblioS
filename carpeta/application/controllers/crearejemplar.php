@@ -33,15 +33,26 @@
             redirect(base_url() . 'register');
         } else {*/
             $titulo = $this->input->post('titulo');
-            $area = $this->input->post('area');
             $cate = $this->input->post('cate');
+            $area = $this->input->post('area');
+            //$autores = $this->input->post('ejem_autor');
             $editorial = $this->input->post('editorial');
+            $paginas = $this->input->post('paginas');
+            $ISBN = $this->input->post('isbn');
+            $idioma = $this->input->post('idioma');
+            $resumen = $this->input->post('resumen');
+
             
             $data = [
                 'ejem_titulo' => $titulo,
-                'ejem_area_id' => $area,
+                'ejem_tipo_id' => $area,
                 'ejem_cate_id' => $cate,
-                'ejem_editorial' => $editorial];
+                'ejem_editorial' => $editorial,
+                'ejem_paginas' => $paginas,
+                'ejem_isbn' => $ISBN,
+                'ejem_idioma' => $idioma,
+                'ejem_resumen' => $resumen,
+            ];
             
 
             
