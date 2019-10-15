@@ -26,11 +26,11 @@
 		  <div class="form-row">
 		    <div class="form-group col-md-6">
 		      <label for="inputEmail4">Nombres</label>
-		      <input type="text" class="form-control form-control-sm" value="<?php echo $usuarioInfo['usua_nombres'] ?>" id="" name="usua_nombres" >
+		      <input type="text" class="form-control form-control-sm" value="<?php echo $this->session->userdata('usua_nombres') ?>" id="" name="usua_nombres" >
 		    </div>
 		    <div class="form-group col-md-6">
 		      <label for="inputPassword4">Apellidos</label>
-		      <input type="text" class="form-control form-control-sm" value="<?php echo $usuarioInfo['usua_apellidos'] ?>" id="" name="usua_apellidos" >
+		      <input type="text" class="form-control form-control-sm" value="<?php echo $this->session->userdata('usua_apellidos') ?>" id="" name="usua_apellidos" >
 		    </div>
 		  </div>
 		  <div class="form-group">
