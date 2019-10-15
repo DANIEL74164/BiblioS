@@ -66,7 +66,7 @@
 		        <!-- Divider -->
      		 <hr class="sidebar-divider my-2">
      		 <div class="text-center">
-     		 	<a href="<?php echo base_url()?>index.php/Welcomeadmin/vistageneral" class="btn btn-danger mb-2 btn-sm">Cancelar</a>
+     		 	<a href="<?php echo base_url()?>/Welcomeadmin/vistageneral" class="btn btn-danger mb-2 btn-sm">Cancelar</a>
      		 	<button type="submit" class="btn btn-primary mb-2 btn-sm">Actualizar Datos</button>
      		 </div>
 		</form>
