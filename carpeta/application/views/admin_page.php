@@ -28,6 +28,6 @@
 					<td><a href="<?= base_url() . 'welcomeadmin/reportes'; ?>">Reportes</a></td>
 				</tr>
 				<tr>
-					<td><a href="<?= base_url() . 'welcomeadmin/datosdeladmin'; ?>">Datos del administrador</a></td>
+					<td><a href="<?= base_url() . 'Welcomeadmin/about'; ?>">Datos del administrador</a></td>
 				</tr>
 			</table>
