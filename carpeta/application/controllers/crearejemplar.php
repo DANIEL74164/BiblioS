@@ -13,52 +13,37 @@
         $this->load->view('footer');
     }
      public function Crear() {
-        
-        /*$this->form_validation->set_rules('codigo', 'Codigo', 'required');
-        $this->form_validation->set_message('is_unique', 'Email already exists.');
-        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[usuario.usua_email]');
-        $this->form_validation->set_rules('password', 'Password');*/
-        //agregando mas datos 
-        /*$this->form_validation->set_rules('codigo','Codigo', 'required');
-        $this->form_validation->set_rules('nombres','Nombres', 'required');
-        $this->form_validation->set_rules('apellidos','Apellidos', 'required');
-        $this->form_validation->set_rules('direccion','Direccion', 'required');
-        $this->form_validation->set_rules('usuario','Usuario', 'required');
-        $this->form_validation->set_rules('contraseña','Contraseña', 'required');
-        $this->form_validation->set_rules('confirmar','confirmar', 'required');
-        $this->form_validation->set_rules('email','Email', 'required');
-        $this->form_validation->set_rules('telefono','Telefono', 'required');*/
-        /*if ($this->form_validation->run() == FALSE) {
-            $this->session->set_flashdata('errors', validation_errors());
-            redirect(base_url() . 'register');
-        } else {*/
             $titulo = $this->input->post('titulo');
-            $cate = $this->input->post('cate');
-            $area = $this->input->post('area');
-            //$autores = $this->input->post('ejem_autor');
             $editorial = $this->input->post('editorial');
             $paginas = $this->input->post('paginas');
-            $ISBN = $this->input->post('isbn');
+            $isbn = $this->input->post('isbn');
             $idioma = $this->input->post('idioma');
+            $portada = $this->input->post('portada');
+            $digital = $this->input->post('digital');
+            $audio = $this->input->post('audio');
             $resumen = $this->input->post('resumen');
-
-            
+            $tipo = $this->input->post('tipo');
+            $categoria = $this->input->post('categoria');
+            $date = $this->input->post('date');
+           
             $data = [
                 'ejem_titulo' => $titulo,
-                'ejem_tipo_id' => $area,
-                'ejem_cate_id' => $cate,
                 'ejem_editorial' => $editorial,
                 'ejem_paginas' => $paginas,
-                'ejem_isbn' => $ISBN,
+                'ejem_isbn' => $isbn,
                 'ejem_idioma' => $idioma,
+                'ejem_portada' => $portada,
+                'ejem_digital' => $digital,
+                'ejem_audio' => $audio,
                 'ejem_resumen' => $resumen,
+                'ejem_tipo_id' => $tipo,
+                'ejem_cate_id' => $categoria,
+                'ejem_anio' => $date
             ];
             
 
-            
             $insert_data = $this->crear->add_ejemplar($data);
             if ($insert_data) {
-                //$this->session->set_flashdata('msg', 'Registrado correctamente');
                 redirect(base_url() . 'welcomeadmin/ejemplaradmin');
             }
 

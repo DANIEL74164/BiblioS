@@ -1,4 +1,4 @@
-		<td class="inicio">
+		<td>
 			¡BIENVENIDO!
 		</td>
 	</tr>

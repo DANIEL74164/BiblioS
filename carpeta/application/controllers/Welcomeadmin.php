@@ -38,7 +38,7 @@ class Welcomeadmin extends MY_Controller {
         $this->load->view('ejemplaradmin',$dato);
         $this->load->view('footer'); 
     }
-    public function autores() {
+    public function autor() {
         $result = $this->db->get('autor');
         $dato = array('consulta' => $result);
         $this->load->view('header');
