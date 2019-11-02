@@ -8,8 +8,8 @@ Primero descargamos los archivos del git y la base de datos con el nombre "sisbi
 
 ACCESO COMO ADMINISTRADOR
 
-Usuario:Andrew
-Contraseña:hola12
+Usuario: Andrew
+Contraseña: hola12
 
 
 EL GRUPO
